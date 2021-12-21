@@ -1,0 +1,357 @@
+
+/* I was getting a little confused with all the containers and didn't want tons and tons of different sections for the CSS. So I did some research and found the * selector or universal selecto and was able to take all the outside padding and fonts for the page and style it from there. */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+
+/*This scroll-behavior gives it more style when clicking on the About, Skills, Projects, and Contact Me links.*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*In this declaration block I chose these values to based on what was showing on my test site. It seemed to bring everything inward a bit better */
+
+.container {
+    padding: 0 100px 0 100px;
+}
+
+/*Here I used a flex-wrap to have my text on one side but still be able to bring my image up across from it. Giving me more room to style and adjust it to how I like.*/
+/*I used the justify-content and space-between to even out my navbar links and give them some space to make it look less cluttered*/
+
+nav ul,
+.main-info-section,
+.work-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #252627;
+}
+
+/*This is for the opposite side of the navbar links. Making it so the header is spaced from the far left side of the page. Also helping line the header and the navbar links up.*/
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+
+.navbar,
+.footer {
+    background-color: #181818;
+}
+
+/*Here what I did was I knew I wanted all the big <h1> to have the smae font color. I grouped them together to save time and make it more readable.*/
+
+header h1,
+header,
+.about h1,
+.skills h1,
+.projects h1,
+.contact h1 {
+    color: #707070;
+}
+
+.text p {
+    color: #48cfad;
+}
+
+/*I used this selector quite abit in my code. This moved my header title down from the top of the page.*/
+
+header h1 {
+    margin-top: 25px;
+}
+
+/*This is to color the text of my links in the navbar.*/
+
+a {
+    color: #ed5565;
+}
+
+/*This was to adjust how far from the top those links are and the margin-left is how far from the left side of the container.*/
+
+li {
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+/*This is for the contact me link below the title in the div main container. I used a text-decoration to remove the underline because I wanted to use other things to style it. I made all text in that link uppercase to make it stand out more.*/
+
+a {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+
+/*Here is the start of my text you see in the div main container. I mainly use margin-tops and font size to adjust where it is positioned. While using a white font to make it pop with the opposite colored background.*/
+
+.text {
+    margin-top: 120px;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/*I used an inline-box to help style the way my text was written. Instead of just across I wanted it to fall down almost like stairs. This way I could have my image on the other side and make it look more symmetrical.*/
+
+
+.text span {
+    display: inline-block;
+}
+
+
+
+/*This was just what I thought looked nice it let the <p> underneath it be more centered with the text above it.*/
+
+span.m-left {
+    margin-left: -10px;
+}
+
+.text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 20px;
+}
+
+/*Here is where I styled the link for contact me I have this in a div container so I can adjust the padding and specific style of the text and other things.*/
+
+/*I have was looking at button options but wanted something not fully colored. I decided to use a border instead to just outline the where it is. I used the position value and make it relative so it would fit according to how my page was looking.*/
+
+
+.text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #ed5565;
+    color: #ed5565;
+    font-size: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    transition: .5s;
+    display: inline-block;
+}
+
+/*Below is some more styling for the contact link. I have som psuedo code for the before when you hover using content it will fill in red. I add another hover effect so when it does turn red the text will turn white so you can still read it.*/
+
+
+.text a:hover {
+    color: #fff;
+}
+
+a::before {
+    content: "";
+    background-color: #ed5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+/*Here I have my profile image this is set to its own div so I can move it up the side of the page more freely. I used a border-radius here to round the corners a little.*/
+
+.profile-image img {
+    width: 450px;
+    margin-top: 300px;
+    border-radius: 8px;
+    width: 450px;
+    height: 650px;
+    
+
+}
+
+/*Here I had the margin from the top of the page to help section. I used viewport (vh) for the height out of recommendation. After using it this helped space my sections apart. Depending on the screen size your using it will change px. Making this very versatile for all users.*/
+
+
+.about {
+    height: 100vh;
+    margin-top: 500px;
+}
+
+.about h1,
+.contact h1,
+.skills h1,
+.projects h1 {
+    font-size: 160px;
+    z-index: 0;
+    color: 
+}
+
+/*For the infor in all my sections it will be the same. I grouped them together and had the heading come down a little bit from the <hr> so it maid it more appealing to the eyes.I also had the minor title be a different color so it stands out but still matches theme.*/
+
+.about h2,
+.contact h2,
+.skills h2,
+.projects h2 {
+    font-size: 40px;
+    color: #ed5565;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.about-me-info p,
+section p,
+.skills p,
+.projects p,
+.contact p {
+    font-size: 20px;
+    color: #bebebe;
+    margin-top: 20px;
+
+}
+
+/*I will have more h3 when I start putting more in the projects and skills tab. For more organization.*/
+
+.about h3 {
+    font-size: 25px;
+    color: #ed5565;
+    margin-top: 22px;
+    text-align: left;
+}
+
+/*For the image I decided to change it a little so it wasn't boring. I made the border-radius 50% to create a circle image. Then using margin-left and margin-right in auto it was able to center it below the info.*/
+
+
+.about img {
+    width: 500px;
+    height: 500px;
+    margin-top: 130px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+/*Here I have the details to my <ul> or unordered list. This is the same details as the <p> just focused on the ul lists.*/
+
+.about-me-info li,
+section {
+    color: #bebebe;
+    font-size: 20px;
+}
+
+
+/*The skills and projects section will have more to come once I have more things undermy belt.*/
+
+.skills {
+    height: 100vh;
+    margin-top: 1200px;
+}
+
+
+.projects {
+    height: 100vh;
+    margin-top: 350px;
+}
+
+
+
+
+
+/*For my contact section I had the info a little larger and farther from the <hr> to make it a little more fuller. I also used very similar techniques for sylizing the link boxes below.Including a hover feature so when hovered over the text turns white. I also included a transition time so when hovered the action happens faster.*/
+
+/*I made the padding larger for the left and right side making it fill out more I also used a overflow value hiding the boxes so the <ol> list would sit evenly next to them.*/
+
+
+
+.contact {
+    margin-top: 300px;
+}
+
+
+.contact p {
+    font-size: 25px;
+    color: #bebebe;
+    margin-top: 100px;
+}
+
+
+
+
+.contact a {
+    padding: 12px 80px;
+    background-color: none;
+    border: 3px solid #ed5565;
+    color: #ed5565;
+    font-size: 22px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 25px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.contact a:hover {
+    color: #fff;
+}
+
+.contact a::before {
+    content: "";
+    background-color: #ed5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover::before {
+    height: 100%;
+}
+
+
+
+
+
+.contact ol {
+    color: #fff;
+}
+
+/*Here I just added an image icon to help show what this section is.*/
+
+.contact img {
+    width: 450px;
+    float: right;
+    margin-top: 0px;
+}
+
+
+/*For my footer I used similar code to the navbar and header. The flex is to help me arrande the text more precisely. While having the justify-content help space the information out evenly and how it I want when its there. I made the padding bigger then the header because when there is more information to put it will need more room. I also noticed on many other sites the footer is usually bigger.*/
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 200px 0 0;
+    padding: 22px 80px 0px 750px;
+    text-align: center;
+}
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Holden's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+
+
+
+    <!--Created navbar container which will house the header and nav bar links.-->
+
+    <!--Each link should be set to keep you on the same page but just smoothly scroll you down to which section they are set for.-->
+
+    <div class="container navbar">
+        <header>
+            <div class="lgo">
+                <h1>Holden Turman</h1>
+            </div>
+            <!--Here is the links for the navigation bar.-->
+            <nav>
+                <ul>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!--We start on the main section of the page. I started this with a div class main container for freedom to have more options for styling with both my images and letters.-->
+
+    <!--I used multiple div containers here to help my style each one specifically. I have a div for the title text, which also contains the contact me link. I also have one for the picture so I can move it more freely than just center left or right. This helps me use padding specifically on the certain elements.-->
+
+
+    <!--I used the span syntax because it helped me more with the styling and moving them to where I exactly wanted them.-->
+
+    <div class="container main-info-section">
+        <div class="text">
+            <h1>
+                <span class="m-left">Hi,</span>
+                <br>
+
+                <span class="m-left">I'm Holden,</span>
+
+                <br>
+
+                <span class="m-left">Software Developer.</span>
+
+            </h1>
+            <p>JavaScript / React / Node.JS</p>
+            <a href="#contact">contact me</a>
+        </div>
+        <div class="profile-image">
+            <img src="images/profile-pic.jpeg" alt="Grey and white picture of long hair male from torso up." />
+        </div>
+
+        <!--I created an article container and div for more room for styling. I also have a section container for the about me and introduction. That way this information will be grouped together while still knowing what it is.-->
+
+        <!--In both sections of the About me you will find my ul lists or Unordered lists.-->
+
+        <article>
+            <div class="container about" id="about">
+                <h1>About</h1>
+                <hr>
+                <!--I have my hr lines/horizontal rule-->
+                <section>
+                    <div class="about-me-info">
+                        <h2>About Me:</h2>
+                        <p>I am a new Software Developer, ready to explore all the avenues this field has to offer!</p>
+
+                        <p> Currently I live in Pleasant Grove, Utah.</p>
+
+                        <p>As a musician, I'm interested in:
+                        <ul>
+                            <li>Jamming on my guitar</li>
+                            <li>Creating new music with other people</li>
+                            <li>Up on the mountain snowboarding</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--Here is the second section of the about me/intro. This will help seperate the two a little better with smaller headings.-->
+
+                <section>
+                    <h3>Who am I:</h3>
+
+                    <p>As a musician I have always loved to create. Normally for me that is in the form of melodies and
+                        lyrics.
+                        However when I found out the possibilites you have to create with software development I was
+                        really blown
+                        away and very intrigued!</p>
+
+                    <p>Web Development is similar to music in alot of ways. You take a simple idea and with small little
+                        pokes
+                        here and there, you soon have something quite amazing!</p>
+
+                    <p>I love working as a team for multiple reasons.</p>
+                    <ul>
+                        <li>You work together to solve the big picture.</li>
+                        <li>It gives you a chance to be a leader and help others.</li>
+                        <li>It teaches you how to communicate and how to listen.</li>
+                        <li>Gives you a new perspective to look from.</li>
+                    </ul>
+
+                    <p>Music has shown me that collaberating with others can make things that much better. I love
+                        interacting and
+                        bouncing ideas off eachother to make something really special!</p>
+
+                    <p>If your looking for a new developer thats excited and can give you their all then please contact
+                        me!</p>
+
+                    <!--I'm not sure how many pictures should be on a portfolio, however I wanted more than just text to show about me so below will be a picture of my interests.-->
+
+                    <img src="images/gibson-guitar.jpeg"
+                        alt="Guy looking down while playing guitar with city back drop blurred out." />
+                </section>
+            </div>
+
+
+
+
+
+            <div class="container skills" id="skills">
+                <h1>Skills</h1>
+                <hr>
+                <!--I have my hr lines/horizontal rule-->
+                <section>
+                    <div class="skills-info">
+                        <h2>My Skills:</h2>
+                        <!--Where my skills will go when I learn them.-->
+                    </div>
+                </section>
+            </div>
+
+
+
+
+            <div class="container projects" id="projects">
+                <h1>Projects</h1>
+                <hr>
+                <!--I have my hr lines/horizontal rule-->
+                <section>
+                    <div class="projects-info">
+                        <h2>My Projects:</h2>
+                        <!--Where my future projects will go when completed-->
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container contact" id="contact">
+                <div class="contact-me-info">
+                    <h1>Contact</h1>
+                </div>
+                <hr>
+                <!--I have my hr lines/horizontal rule-->
+                <section>
+                    <h2>Contact Me:</h2>
+                    <div class="text">
+                        <div class="contact-image">
+                            <img src="images/white-mail.png" alt=" white envelope black background" />
+                        </div>
+                        <ol>
+                            <li><a href="https://www.linkedin.com/in/holden-turman-556a211a0/"
+                                    target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.github.com/HoldenTurman" target="_blank">Github</a></li>
+                            <li><a href="mailto:holden.turman1@gmail.com">Email</a></li>
+                        </ol>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+
+    <!--For the footer, I started it in a div container because I was having some issues getting the margins to be where I wanted them. This allowed me to make things more precise of how I wanted to arrange and style them.-->
+
+    <!--For the footer information I wasn't exactly sure what everything I should put there. So for now I have my name.-->
+
+    <div class="container footer" id="footer">
+        <div class="text">
+            <p>©Holden Turman</p>
+            <header>
+            </header>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
